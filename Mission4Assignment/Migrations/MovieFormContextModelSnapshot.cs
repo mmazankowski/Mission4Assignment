@@ -53,6 +53,56 @@ namespace Mission4Assignment.Migrations
                     b.HasKey("MovieId");
 
                     b.ToTable("Responses");
+
+                    b.HasData(
+                        new
+                        {
+                            MovieId = 1,
+                            Category = "Family/Drama",
+                            Director = "Cameron Crowe",
+                            Edited = false,
+                            LentTo = "Haylee",
+                            Notes = "Brought us together",
+                            Rating = "PG",
+                            Title = "We Bought a Zoo",
+                            Year = 2011
+                        },
+                        new
+                        {
+                            MovieId = 2,
+                            Category = "Fantasy/Adventure",
+                            Director = "David Yates",
+                            Edited = false,
+                            LentTo = "Nobody",
+                            Notes = "Best HP movie",
+                            Rating = "PG - 13",
+                            Title = "Harry Potter and the Order of the Phoenix",
+                            Year = 2007
+                        },
+                        new
+                        {
+                            MovieId = 3,
+                            Category = "Comedy/Adventure",
+                            Director = "Ben Stiller",
+                            Edited = true,
+                            LentTo = "Haylee",
+                            Notes = "So funny",
+                            Rating = "PG",
+                            Title = "The Secret Life of Walter Mitty",
+                            Year = 2013
+                        },
+                        new
+                        {
+                            MovieId = 4,
+                            Category = "Action/Adventure",
+                            Director = "Jon Watts",
+                            Edited = true,
+                            LentTo = "The world",
+                            Notes = "Best Spiderman movie",
+                            Rating = "PG - 13",
+                            Title = "Spider-Man: No Way Home",
+                            Year = 2021
+                        });
                 });
 #pragma warning restore 612, 618
         }
